@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Travelers</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="toppng.com-etaway-travel-logo-2524x956.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+               
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="title" id="home">
+            <h1>RAHUL TRAVELERS</h1>
+        </div>
+        <div class="change">
+            <h1>LET'S TRAVEL <span class="changec"></span></h1>
+        </div>
+        <div class="btn">
+            <a href="#" class="b">WATCH VIDEO</a>
+            <a href="#" class="b">LEARN MORE</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Rahul Travelers</strong>, your trusted partner in exploring the world’s most breathtaking destinations. We believe that travel is not just about visiting new places—it's about creating stories, embracing different cultures, and rediscovering yourself through the beauty of the world. Whether you're seeking adventure in the mountains, tranquility on serene beaches, or inspiration in historical landmarks, we’re here to make every moment of your journey unforgettable.
+            </p>
+
+            <h3>Who We Are</h3>
+            <p>
+                Rahul Travelers was founded on the passion for wanderlust and the desire to connect people with the wonders of the world. We’re more than just a travel company—we're dream weavers, experience creators, and memory builders. With a dedicated team of travel enthusiasts, we meticulously plan and curate trips to ensure your journey is as seamless and joyful as possible.
+            </p>
+
+            <h3>What We Offer</h3>
+            <ul>
+                <li><strong>Custom Travel Packages:</strong> Tailored itineraries to suit your interests, budget, and preferences.</li>
+                <li><strong>Adventure Tours:</strong> From trekking in the Himalayas to diving in coral reefs, we bring out the adventurer in you.</li>
+                <li><strong>Cultural Experiences:</strong> Dive deep into the traditions, festivals, and cuisines of the places you visit.</li>
+                <li><strong>Relaxation Retreats:</strong> Unwind in luxury resorts, serene beaches, or tranquil hill stations.</li>
+                <li><strong>Group Expeditions:</strong> Explore the world with like-minded travelers and make lifelong connections.</li>
+            </ul>
+
+            <h3>Our Mission</h3>
+            <p>
+                At Rahul Travelers, our mission is to inspire and enable people to explore the world while fostering a deeper connection with nature, history, and diverse cultures. We aim to provide journeys that leave an indelible mark on your soul and ignite the spark of curiosity within.
+            </p>
+
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li><strong>Expertise:</strong> With years of experience in the travel industry, we know the best-kept secrets and hidden gems of every destination.</li>
+                <li><strong>Personalized Service:</strong> Every trip is tailored to your unique needs and interests.</li>
+                <li><strong>Safety First:</strong> Your safety and comfort are our top priorities. We partner with reliable guides, transportation, and accommodations.</li>
+                <li><strong>Affordable Luxury:</strong> We ensure the best value for your money without compromising on quality.</li>
+                <li><strong>Eco-Conscious Travel:</strong> We are committed to sustainable travel practices that preserve the beauty of our planet for generations to come.</li>
+            </ul>
+
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Passion for Travel:</strong> Travel is at the heart of everything we do.</li>
+                <li><strong>Customer-Centric Approach:</strong> Your happiness is our success.</li>
+                <li><strong>Integrity:</strong> Transparency and honesty guide all our interactions.</li>
+                <li><strong>Sustainability:</strong> We strive to minimize the environmental impact of tourism.</li>
+            </ul>
+
+            <h3>Let’s Travel Together</h3>
+            <p>
+                We believe the world is a book, and those who do not travel read only one page. Let Rahul Travelers be your guide to turning these pages into extraordinary chapters. From the golden sands of Rajasthan to the lush backwaters of Kerala, from the snowy peaks of the Alps to the vibrant streets of Tokyo, the journey of a lifetime awaits you.
+            </p>
+            <p>
+                So, what are you waiting for? Pack your bags, bring your curiosity, and let’s embark on an adventure together. With Rahul Travelers, every destination becomes a new beginning.
+            </p>
+            <p>
+                <strong>Discover. Experience. Live.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="image1.jpg" alt="Place 1"></div>
+            <div class="gallery-item"><img src="image2.jpg" alt="Place 2"></div>
+            <div class="gallery-item"><img src="image3.jpg" alt="Place 3"></div>
+            <div class="gallery-item"><img src="image4.jpg" alt="Place 4"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Rahul Travelers. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
